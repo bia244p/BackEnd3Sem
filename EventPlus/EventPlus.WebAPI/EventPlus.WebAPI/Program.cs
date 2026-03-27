@@ -44,7 +44,7 @@ builder.Services.AddSwaggerGen(options =>
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {
-            Name = "Carol",
+            Name = "Bia",
             Url = new Uri("https://www.google.com/search?q=tvd&oq=tvd&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyCQgCEAAYChiABDIHCAMQABiABDIHCAQQABiABDINCAUQABiDARixAxiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDE4ODJqMGo3qAIIsAIB8QWviz44YQANPg&sourceid=chrome&ie=UTF-8")
         },
         License = new OpenApiLicense
