@@ -1,0 +1,60 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: rgb(243, 196, 236);
+}
+
+.menu__item{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    transition:color 0.4s ;
+}
+
+.menu__item:hover{
+    color: aqua;
+}
+
+.menu__item--signin{
+    padding: 5px 10px;
+    background-color: aliceblue;
+    color: pink;
+    border-radius: 3px;
+}
+
+.menu__item--signup{
+    padding: 5px 10px;
+    border: 1px dotted white;
+    border-radius: 3px;
+
+}
+
+.card-perfil{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid whitesmoke;
+    background-color: rgb(234, 240, 238);
+
+}
+
+.card-perfil__imagem{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid white;
+}

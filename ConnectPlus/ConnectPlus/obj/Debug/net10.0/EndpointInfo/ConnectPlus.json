@@ -26,10 +26,15 @@
               "schema": {
                 "required": [
                   "DadosContato",
-                  "IdTipoContato"
+                  "IdTipoContato",
+                  "Nome"
                 ],
                 "type": "object",
                 "properties": {
+                  "IdContato": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
                   "Nome": {
                     "type": "string"
                   },
@@ -47,6 +52,9 @@
                 }
               },
               "encoding": {
+                "IdContato": {
+                  "style": "form"
+                },
                 "Nome": {
                   "style": "form"
                 },
@@ -146,10 +154,15 @@
               "schema": {
                 "required": [
                   "DadosContato",
-                  "IdTipoContato"
+                  "IdTipoContato",
+                  "Nome"
                 ],
                 "type": "object",
                 "properties": {
+                  "IdContato": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
                   "Nome": {
                     "type": "string"
                   },
@@ -167,6 +180,9 @@
                 }
               },
               "encoding": {
+                "IdContato": {
+                  "style": "form"
+                },
                 "Nome": {
                   "style": "form"
                 },

@@ -1,8 +1,9 @@
-using ConnectPlus.ConnectPlusz;
+using ConnectPlus.BdContextConnectPlus;
 using ConnectPlus.Interface;
 using ConnectPlus.Interface;
 using ConnectPlus.Interface;
 using ConnectPlus.Interface;
+using ConnectPlus.Repository;
 using ConnectPlus.Repository;
 using ConnectPlus.Repository;
 using ConnectPlus.Repository;
@@ -15,7 +16,7 @@ using System;
 var builder = WebApplication.CreateBuilder(args);
 
 //1. Configurar o contexto do Banco de Dados
-builder.Services.AddDbContext<ConnectPluszContext>(options => options.UseSqlServer
+builder.Services.AddDbContext<ConnectContext>(options => options.UseSqlServer
     (builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<ITipoContatoRepository, TipoContatoRepository>();

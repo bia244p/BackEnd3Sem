@@ -8,6 +8,11 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "IdContato",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
         "Name": "Nome",
         "Type": "System.String",
         "IsRequired": false
@@ -84,6 +89,11 @@
         "Name": "Id",
         "Type": "System.Guid",
         "IsRequired": true
+      },
+      {
+        "Name": "IdContato",
+        "Type": "System.Guid",
+        "IsRequired": false
       },
       {
         "Name": "Nome",

@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ConnectPlus.DTO
+namespace ConnectPlus.DTO;
+
+
+public class TipoContatoDTO
 {
-    public class TipoContatoDTO
-    {
-        [Required(ErrorMessage = "O titulo do tipo de evento é obrigatório!")]
-        public string? Titulo { get; set; }
-    }
+    [Required(ErrorMessage = "O titulo do tipo de evento é obrigatório!")]
+    public string? Titulo { get; set; }
 }

@@ -1,0 +1,41 @@
+* {
+    /*reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Desktop First >= 992px*/
+
+h1 {
+    color: blueviolet;
+}
+
+img{
+    width: 200px;
+}
+
+/*Breakpoints*/
+
+/*Tablet <992px (768 - 991px)*/
+@media screen and (max-width: 991px) {
+    h1 {
+        color: brown;
+    }
+    
+    img{
+        display: none;
+    }
+}
+
+/*Mobile <768 (0px - 767)*/
+@media screen and (max-width: 767px) {
+    h1 {
+        background-color: aqua;
+        color: aquamarine;
+    }
+
+    img{
+        display: block;
+    }
+}

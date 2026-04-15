@@ -1,4 +1,5 @@
-﻿using ConnectPlus.ConnectPlusz;
+﻿
+using ConnectPlus.BdContextConnectPlus;
 using ConnectPlus.Interface;
 using ConnectPlus.Models;
 using System;
@@ -7,9 +8,9 @@ namespace ConnectPlus.Repository
 {
     public class ContatoRepository : IContatoRepository
     {
-        private readonly ConnectPluszContext _context;
+        private readonly ConnectContext _context;
 
-        public ContatoRepository(ConnectPluszContext context)
+        public ContatoRepository(ConnectContext context)
         {
             _context = context;
         }
@@ -54,5 +55,4 @@ namespace ConnectPlus.Repository
         }
     }
 }
-
 

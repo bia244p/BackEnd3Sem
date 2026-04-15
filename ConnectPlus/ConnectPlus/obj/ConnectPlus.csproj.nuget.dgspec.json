@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\53808948876\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\ConnectPlus.csproj": {}
+    "C:\\Users\\53808948876\\Desktop\\ConnectPlus\\ConnectPlus\\ConnectPlus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\53808948876\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\ConnectPlus.csproj": {
+    "C:\\Users\\53808948876\\Desktop\\ConnectPlus\\ConnectPlus\\ConnectPlus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\53808948876\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\ConnectPlus.csproj",
+        "projectUniqueName": "C:\\Users\\53808948876\\Desktop\\ConnectPlus\\ConnectPlus\\ConnectPlus.csproj",
         "projectName": "ConnectPlus",
-        "projectPath": "C:\\Users\\53808948876\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\ConnectPlus.csproj",
+        "projectPath": "C:\\Users\\53808948876\\Desktop\\ConnectPlus\\ConnectPlus\\ConnectPlus.csproj",
         "packagesPath": "C:\\Users\\53808948876\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\53808948876\\Desktop\\BackEnd3Sem\\ConnectPlus\\ConnectPlus\\obj\\",
+        "outputPath": "C:\\Users\\53808948876\\Desktop\\ConnectPlus\\ConnectPlus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,11 +78,19 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
+              "version": "[10.1.6, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
               "version": "[10.1.7, )"
             },
-            "System.IdentityModel.Tokens.Jwt": {
+            "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
-              "version": "[8.17.0, )"
+              "version": "[10.1.7, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[10.1.7, )"
             }
           },
           "imports": [

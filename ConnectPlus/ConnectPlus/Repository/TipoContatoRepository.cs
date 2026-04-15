@@ -1,4 +1,4 @@
-﻿using ConnectPlus.ConnectPlusz;
+﻿using ConnectPlus.BdContextConnectPlus;
 using ConnectPlus.Interface;
 using ConnectPlus.Models;
 using System;
@@ -7,9 +7,9 @@ namespace ConnectPlus.Repository
 {
     public class TipoContatoRepository : ITipoContatoRepository
     {
-        private readonly ConnectPluszContext _context;
+        private readonly ConnectContext _context;
 
-        public TipoContatoRepository(ConnectPluszContext context)
+        public TipoContatoRepository(ConnectContext context)
         {
             _context = context;
         }
@@ -31,6 +31,8 @@ namespace ConnectPlus.Repository
 
         public void Cadastrar(TipoContato tipoContato)
         {
+            tipoContato.IdTipoContato = Guid.NewGuid();
+
             _context.TipoContatos.Add(tipoContato);
             _context.SaveChanges();
         }
