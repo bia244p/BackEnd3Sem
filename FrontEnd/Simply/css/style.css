@@ -1,12 +1,234 @@
-*{
+/*Import de fontes*/
+@font-face {
+    font-family: Fragment;
+    src: url(./Fontes/Fragment_Mono/FragmentMono-Regular.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    width:100%;
+body {
+    background-image: linear-gradient(to right bottom, #18a2c9, #72c3bd);
+    background-repeat: no-repeat;
+    width: 100%;
     height: 100%;
-    border: 1px color (pink);
+}
+
+
+/*Desktop First*/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container--flex--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    padding: 10px 0;
+    /* height: 80px; */
+}
+
+
+.header__logo {
+    width: 100px;
+}
+
+.header__tittle {
+    font-family: Fragment;
+    color: #DED27C;
+}
+
+
+.header__text {
+    font-family: Fragment;
+    color: white;
+}
+
+.contact-form {
+    padding: 20px 0;
+}
+
+.contact-form__linha {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact-form__col-a {
+    width: 10%;
+    display: flex;
+    align-items: start;
+    padding: 3px;
+}
+
+.contact-form__col-b {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.contact-form__label {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 600;
+}
+
+.contact-form__input {
+    color: #18a2c9;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 3px;
+
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.contact-form__input:focus {
+    background-color: #72c3bd;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.contact-form__textarea {
+    height: 200px;
+    width: 100%;
+
+    color: #18a2c9;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 3px;
+
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.contact-form__textarea:focus {
+    background-color: #72c3bd;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.contact-form__button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+.contact-form__button:hover{
+   background-color: #72c3bd;
+}
+
+/*Modificadores*/
+.contact-form__input--metade {
+    width: 49%;
+    height: 35px;
+}
+
+.contact-form__input--inteiro {
+    width: 100%;
+    height: 35px;
+}
+
+.contact-form__input--terco {
+    width: 32%;
+    height: 35px;
+}
+
+.contact-form__input--quarto {
+    width: 24%;
+    height: 35px;
+}
+
+/*Breakpoints - Tablet*/
+
+@media screen and (max-width: 991px) {
+    .container{
+        max-width: 750px;
+    }
+
+    .header__logo{
+        width: 140px;
+        height: 140px;
+    }
+    
+    .header__text{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .contact-form__col-a{
+        font-size: 13px;
+
+    }
+
+    .contact-form__textarea{
+        width: 90%;
+        height: 100px;
+    }
+}
+
+
+/*Breakpoints - mobile*/
+
+@media screen and (max-width: 767px) {
+    .contact-form__input{
+        width: 90%;
+        height: 70px;
+    }
+
+    .contact-form__textarea{
+        height: 100px;
+        width: 90%;
+    }
+
+     .contact-form__botao{
+        width: 90%;
+        margin-bottom: 15px;
+     }
+
+       .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form__col-a{
+        display: none;
+    }
+
+    .contact-form__col-b{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-form__linha{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+ 
+    
 
 }

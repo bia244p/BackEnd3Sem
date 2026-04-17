@@ -1,0 +1,107 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "Bia",
+      "sobrenome": "Paz",
+      "email": "pazbia@gmail.com"
+    },
+    {
+      "id": "1BCQ_9Nn4aY"
+    },
+    {
+      "nome": "Bia",
+      "sobrenome": "Paz",
+      "email": "pazbia@gmail.com",
+      "id": "GCmtnXoqhQw"
+    },
+    {
+      "nome": "Bia",
+      "sobrenome": "silva",
+      "email": "pazbia@gmail.com",
+      "id": "qUc8mfWCq_4"
+    },
+    {
+      "nome": "rafa",
+      "sobrenome": "linda",
+      "email": "lindarafa@gmail.com",
+      "id": "3Bq1gv-NgyQ"
+    },
+    {
+      "nome": "bia",
+      "sobrenome": "arenas",
+      "email": "biaarenas@gmail.com",
+      "id": "2oYAJb6DOXE"
+    },
+    {
+      "nome": "anne",
+      "sobrenome": "nicoly",
+      "email": "annenicoly@gmail.com",
+      "id": "D_gIO4TWJz4"
+    },
+    {
+      "nome": "rawany",
+      "sobrenome": "manoel",
+      "email": "rewanymanoel@gmail.com",
+      "id": "YLU5ZYgliLg"
+    },
+    {
+      "nome": "milena",
+      "sobrenome": "mares",
+      "email": "milenamares@gmail.com",
+      "id": "zVN0HloTTOk"
+    },
+    {
+      "nome": "nnn",
+      "sobrenome": "ppp",
+      "id": "caszhv2gy7g"
+    },
+    {
+      "nome": "nn",
+      "sobrenome": "pp",
+      "id": "JspTNPojh3U"
+    }
+  ],
+  "Produto": [
+    {
+      "nome": "banana",
+      "Preco": 5,
+      "quantidade": 10,
+      "id": "MHLC_DEdnDk"
+    },
+    {
+      "nome": "melancia",
+      "Preco": 6,
+      "quantidade": 1,
+      "id": "n4YdTeO2a4w"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
